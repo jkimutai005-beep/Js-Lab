@@ -1,4 +1,3 @@
-
 function createLoginTracker(userInfo, maxAttempts) {
     let attemptCount = 0;
 
@@ -17,16 +16,14 @@ function createLoginTracker(userInfo, maxAttempts) {
     };
 }
 
-
 const userInfo = {
     "username": "user1",
     "password": "password123"
 };
 
-
 const login = createLoginTracker(userInfo, 3);
 
 console.log(login("wrongpass"));
-console.log(login("wrongpass"))
-console.log(login("wrongpass"))
-console.log(login("password123"))
+console.log(login("wrongpass"));
+console.log(login("wrongpass"));
+console.log(login("wrongpass"));
