@@ -1,4 +1,4 @@
-function loginManager(maxAttempts) {
+function createLoginTracker(maxAttempts) {
     let attempts = 0;
 
     
@@ -18,7 +18,7 @@ function loginManager(maxAttempts) {
 }
 
 
-const login = loginManager(3); // 3 is the maximum limit of attempts the user can make before being blocked out
+const login = createLoginTracker(3); // 3 is the maximum limit of attempts the user can make before being blocked out
 
 console.log(login("wrongPass")); // Incorrect password. Attempts remaining: 2
 console.log(login("wrongPass")); // Incorrect password. Attempts remaining: 1
