@@ -29,3 +29,5 @@ console.log(login("wrongpass"));
 console.log(login("wrongpass"));
 console.log(login("wrongpass"));
 console.log(login("wrongpass"));
+
+module.exports = createLoginTracker;
